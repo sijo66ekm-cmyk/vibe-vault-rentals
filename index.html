@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Vault | Party Speaker Rentals in Ernakulam</title>
+    <style>
+        /* Modern, Dark Party Theme */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Accent Color to match your poster */
+        :root {
+            --primary-color: #ff4500; /* Vibrant Orange/Red */
+            --dark-gray: #1e1e1e;
+        }
+
+        /* Navigation */
+        header {
+            background: rgba(18, 18, 18, 0.9);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e03e00;
+            transform: scale(1.05);
+        }
+
+        /* Equipment Section */
+        .equipment {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--dark-gray);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Info Banner */
+        .info-banner {
+            background: var(--primary-color);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .info-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Contact/Booking Form */
+        .contact {
+            padding: 80px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 15px;
+            background: var(--dark-gray);
+            border: 1px solid #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #333;
+        }
+
+        .contact-details {
+            margin-bottom: 15px;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; } /* Simplified for mobile view */
+            header { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VIBE <span>VAULT..</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Party <span>Speaker</span> Rentals</h1>
+        <p>Provides powerful sound, vibrant light shows, and easy portability for any party setting. Affordable speaker options for your next event.</p>
+        <a href="#book" class="btn">Book Now</a>
+    </section>
+
+    <div class="info-banner">
+        <h2>Service Location: Ernakulam</h2>
+        <h3>Rates Start At Just ₹500/-</h3>
+    </div>
+
+    <section class="equipment" id="equipment">
+        <h2 class="section-title">Our Gear</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Party Speakers</h3>
+                <p>High-wattage Bluetooth speakers with deep bass and built-in vibrant LED light shows to set the mood.</p>
+            </div>
+            <div class="card">
+                <h3>Audio Mixers</h3>
+                <p>Professional mixing consoles for DJs, live bands, and event hosting to ensure perfect sound balance.</p>
+            </div>
+            <div class="card">
+                <h3>Wireless Mics</h3>
+                <p>High-quality handheld wireless microphones. Perfect for speeches, karaoke, and announcements without the hassle of cables.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="book">
+        <h2 class="section-title" style="text-align: center;">Book Your Gear</h2>
+        <form action="mailto:sijo66ekm@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="tel" name="Phone" placeholder="Your Phone Number (+91)" required>
+            <input type="date" name="Date" required>
+            <select name="Equipment">
+                <option value="Speaker Only">Speaker Only</option>
+                <option value="Speaker + Mic">Speaker + Wireless Mic</option>
+                <option value="Full Setup (Speaker, Mic, Mixer)">Full Setup (Speaker, Mic, Mixer)</option>
+            </select>
+            <textarea name="Message" rows="4" placeholder="Tell us about your event (Location, duration, specific needs)"></textarea>
+            <button type="submit" class="btn">Send Booking Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-details">
+            <p>📞 +91 8129368013</p>
+            <p>✉️ sijo66ekm@gmail.com</p>
+            <p>📍 Ernakulam, Kerala</p>
+        </div>
+        <p>&copy; 2026 Vibe Vault. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
